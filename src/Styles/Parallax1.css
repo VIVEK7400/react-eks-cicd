@@ -1,0 +1,73 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Parallax Container */
+.parallax-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Parallax Image */
+.parallax-image {
+  /* background-image: url('./assets/que.jpg'); Replace with your image path */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Black Overlay for Text */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+/* Content Section */
+.content {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.content h2 {
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.custom-accordion-header {
+  background-color: transparent !important; /* Transparent header */
+  color: white !important; /* White text */
+  font-weight: bold;
+  border: none;
+}
