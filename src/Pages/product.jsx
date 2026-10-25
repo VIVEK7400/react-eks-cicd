@@ -6,9 +6,7 @@ import { Col, ListGroup, Row, Tab } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { pro1, pro2, pro3, pro4, pro5, pro6, Bg3, Pattern } from '../Elements/imports';
 import { Link } from 'react-router-dom';
-
-
-
+import { FaBoxes, FaShieldAlt, FaCheckCircle, FaTachometerAlt, FaBolt, FaTools } from "react-icons/fa";
 
 function Product() {
     const [scrollY, setScrollY] = useState(0);
@@ -99,36 +97,74 @@ export const Productlist = () => {
                 </h4>
 
                 <div className='row g-3 mb-2 mt-2'>
-                    <div className='col-sm-2'>
-                        <Message type="info">
-                            <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#1E3E62' }}>Quantity</strong>
-                        </Message>
+                    <div className="row">
+                        <div className='col-sm-2'>
+                            <Message type="info">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#1E3E62' }}>
+                                        Quantity
+                                    </strong>
+                                    <FaBoxes size={20} color="#1E3E62" />
+                                </div>
+                            </Message>
+                        </div>
+
+                        <div className='col-sm-2'>
+                            <Message type="success">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#1E5128' }}>
+                                        Durability
+                                    </strong>
+                                    <FaShieldAlt size={20} color="#1E5128" />
+                                </div>
+                            </Message>
+                        </div>
+
+                        <div className='col-sm-2'>
+                            <Message style={{ backgroundColor: '#77B0AA' }}>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#135D66' }}>
+                                        Reliability
+                                    </strong>
+                                    <FaCheckCircle size={20} color="#135D66" />
+                                </div>
+                            </Message>
+                        </div>
+
+                        <div className='col-sm-2'>
+                            <Message type="warning">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#D49B54' }}>
+                                        Performance
+                                    </strong>
+                                    <FaTachometerAlt size={20} color="#D49B54" />
+                                </div>
+                            </Message>
+                        </div>
+
+                        <div className='col-sm-2'>
+                            <Message type="error">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#E95793' }}>
+                                        Efficiency
+                                    </strong>
+                                    <FaBolt size={20} color="#E95793" />
+                                </div>
+                            </Message>
+                        </div>
+
+                        <div className='col-sm-2'>
+                            <Message style={{ backgroundColor: '#D49B54' }}>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <strong style={{ fontSize: '15px', fontStyle: 'italic' }}>
+                                        Services
+                                    </strong>
+                                    <FaTools size={20} />
+                                </div>
+                            </Message>
+                        </div>
                     </div>
-                    <div className='col-sm-2'>
-                        <Message type="success">
-                            <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#1E5128' }}>Durability</strong>
-                        </Message>
-                    </div>
-                    <div className='col-sm-2'>
-                        <Message type="warning">
-                            <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#D49B54' }}>Performance</strong>
-                        </Message>
-                    </div>
-                    <div className='col-sm-2'>
-                        <Message type="error">
-                            <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#E95793' }}>Efficiency</strong>
-                        </Message>
-                    </div>
-                    <div className='col-sm-2'>
-                        <Message style={{ backgroundColor: '#D49B54', color: '#D49B54' }}>
-                            <strong style={{ fontSize: '15px', fontStyle: 'italic' }}>Services</strong>
-                        </Message>
-                    </div>
-                    <div className='col-sm-2'>
-                        <Message style={{ backgroundColor: '#77B0AA' }}>
-                            <strong style={{ fontSize: '15px', fontStyle: 'italic', color: '#135D66' }}>Reliability</strong>
-                        </Message>
-                    </div>
+
                     <div>
                         <h4 style={{ color: 'black' }}>Comprehensive Solutions for IBR Boilers and Industrial Equipment</h4>
                         <p style={{ lineHeight: 2, textAlign: 'justify' }}>

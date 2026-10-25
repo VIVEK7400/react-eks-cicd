@@ -1,4 +1,4 @@
-import Logo from '../assets/Ennaarlogo.png';
+import Logo from '../assets/ennaarlogo.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
